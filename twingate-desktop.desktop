@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=0.0.1
+Name=Twingate Desktop
+Exec="/opt/twingate-desktop/twingate-desktop" > /dev/null 2>&1
+Icon=/opt/twingate-desktop/twingate.png
+Type=Application
+StartupNotify=true
+X-GNOME-Autostart-enabled=true
+Encoding=UTF-8
