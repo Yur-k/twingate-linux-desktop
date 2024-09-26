@@ -27,6 +27,8 @@ func (a App) Start() {
 	iconGallery := icongallery.NewIconGallery()
 	iconGallery.AddIconByByte(activeIconName, icons.Active)
 	iconGallery.AddIconByByte(inactiveIconName, icons.Inactive)
+
+	menuConfig := tray.ParseCLIArgs()
 	indicator := tray.NewSystemTrayIndicator(iconGallery, twingate, activeIconName, inactiveIconName)
-	indicator.Run()
+	indicator.Run(menuConfig)
 }

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install dependencies
+sudo apt-get install -y gir1.2-ayatanaappindicator3-0.1 xclip libdbusmenu-glib-dev
+
 APP_NAME="twingate-desktop"
 AUTOAPPROVE=false
 
