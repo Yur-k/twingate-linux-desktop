@@ -14,7 +14,7 @@ func NewTwingateService() *TwingateService {
 }
 
 func (t TwingateService) Start() {
-	startCmd := exec.Command("pkexec", "twingate", "start")
+	startCmd := exec.Command("/usr/bin/twingate", "start")
 	startCmd.Stdout = os.Stdout
 	startCmd.Stderr = os.Stderr
 	err := startCmd.Run()
@@ -26,7 +26,7 @@ func (t TwingateService) Start() {
 }
 
 func (t TwingateService) Stop() {
-	stopCmd := exec.Command("pkexec", "twingate", "stop")
+	stopCmd := exec.Command("/usr/bin/twingate", "stop")
 	stopCmd.Stdout = os.Stdout
 	stopCmd.Stderr = os.Stderr
 	err := stopCmd.Run()
